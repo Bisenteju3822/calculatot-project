@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background: url("calc2.jpg");
+
+
+  }
+
+  .tcalc {
+    margin-top: 50px;
+    width: 500px;
+    height: 600px;
+    border-radius: 8px;
+  }
+
+  #show {
+    border-radius: 8px;
+    font-size: 30px;
+    color: white;
+
+  }
+
+  .hov :hover {
+    box-shadow: 0 6px 20px rgb(208, 192, 192);
+  }
+
+  .but1 {
+    text-align: center;
+    color: rgb(30, 38, 46);
+    border-radius: 8px;
+    background: #e3e3e3;
+    font-weight: bolder;
+    font-size: 30px;
+
+  }
+
+  .but1:hover {
+
+    box-shadow: 0 4px 8px rgb(208, 192, 192);
+  }
+
+  .but2 {
+    text-align: center;
+    color: rgb(30, 38, 46);
+    border-radius: 8px;
+    background: #f95959;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .but2:hover {
+
+    box-shadow: 0 4px 8px rgb(208, 192, 192);
+  }
+</style>
+
+<body>
+  <table bgcolor="#233142" class="tcalc" align="center" border="2px" cellpadding="20px" cellspacing="20px">
+    <tr class="hov">
+      <td id="show" bgcolor="#455d7a " colspan="4"></td>
+    </tr>
+    <td class="but1" onclick="call('1')">1</td>
+    <td class="but1" onclick="call('2')">2</td>
+    <td class="but1" onclick="call('3')">3</td>
+    <td class="but2" onclick="call('4')">4</td>
+    </tr>
+    </tr>
+    <td class="but1" onclick="call('5')">5</td>
+    <td class="but1" onclick="call('6')">6</td>
+    <td class="but1" onclick="call('7')">7</td>
+    <td class="but2" onclick="call('8')">8</td>
+    </tr>
+    </tr>
+    <td class="but1" onclick="call('9')">9</td>
+    <td class="but1" onclick="call('0')">0</td>
+    <td class="but1" onclick="call('+')">+</td>
+    <td class="but2" onclick="call('4')">-</td>
+    </tr>
+    </tr>
+    <td class="but2" onclick="call('/')">/</td>
+    <td class="but2" onclick="call('*')">*</td>
+    <td class="but2">sqroot</td>
+    <td class="but2" onclick="call('%')">%</td>
+    </tr>
+    <tr>
+      <td class="but1" onclick="clearAll()">AC</td>
+      <td class="but1" onclick="deleteLast()">DEL</td>
+      <td class="but1">square</td>
+      <td class="but1" onclick="calculator()"> = </td>
+    </tr>
+  </table>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
